@@ -1,0 +1,3 @@
+document.querySelectorAll('[data-year]').forEach((element) => { element.textContent = new Date().getFullYear(); });
+document.querySelectorAll('.step').forEach((step) => { step.addEventListener('click', () => { document.querySelectorAll('.step').forEach((item) => item.classList.remove('active')); step.classList.add('active'); }); });
+document.querySelectorAll('form').forEach((form) => { form.addEventListener('submit', (event) => { event.preventDefault(); alert('Thanks — this demo form is ready to connect to the TRAY CRM or backend.'); }); });
